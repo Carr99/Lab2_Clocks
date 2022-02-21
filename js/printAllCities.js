@@ -6,7 +6,7 @@ async function loadJsonAndDisplay() {
   for (let city of citys) {
     html += `
     <Button class="citySquare" id="${city.id}@${city.city}@${city.timezone}" >
-      <p class="cityTitle">${city.city}</p>
+      <p class="names">${city.city}</p>
     </Button>
     `
   }
