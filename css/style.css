@@ -16,14 +16,12 @@ main {
 
 h1 {
   font-family: 'Source Sans Pro';
+  font-size: 35px;
 }
 
-button {
-  font-family: 'Bitter';
-}
-
-.names {
+p {
   font-size: 20px;
+  font-family: 'Bitter';
 }
 
 .citySquare {
