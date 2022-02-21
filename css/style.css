@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Source+Sans+Pro:wght@600&display=swap');
+
+body {
+  background-color: rgb(230, 230, 230);
+  margin: 0;
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  max-width: 650px;
+  margin: 10px auto;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Source Sans Pro';
+}
+
+button {
+  font-family: 'Bitter';
+}
+
+.cityTitle {
+  font-size: 20px;
+}
+
+.citySquare {
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  width: 90%;
+  border: 1px solid rgb(223, 223, 223);
+  margin-bottom: 8px;
+  color: rgb(0, 0, 0);
+}
+
+.citySquare:hover {
+  background-color: grey;
+  cursor: pointer;
+}
