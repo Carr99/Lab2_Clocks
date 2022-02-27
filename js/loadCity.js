@@ -6,7 +6,7 @@ function loadCity() {
   document.getElementById("cityName").textContent = "" + cityName;
   control = setInterval(() => {
     let now = new Date();
-    let myArray = timeZone.split('@')
+    let myArray = timeZone.split('.')
     //Minute
     let minute = document.getElementById("minute");
     let min = now.getMinutes();
@@ -36,6 +36,18 @@ function loadCity() {
     let sec = now.getSeconds();
     let secDegrees = 6 * sec;
     second.style.transform = `rotate(${secDegrees}deg)`;
+
+    if (hr < 10 || min < 10 || sec < 10) {
+      if (hr < 10) {
+        document.getElementById("analogTime").textContent = "0" + hr + ":" + min + ":" + sec;
+      } else if (min < 10) {
+        document.getElementById("analogTime").textContent = hr + ":0" + min + ":" + sec;
+      } else {
+        document.getElementById("analogTime").textContent = hr + ":" + min + ":0" + sec;
+      }
+    } else {
+      document.getElementById("analogTime").textContent = hr + ":" + min + ":" + sec;
+    }
   }, 1000);
 }
 

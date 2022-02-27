@@ -4,7 +4,6 @@ document.querySelector('body').addEventListener('click', function (event) {
 
   if (!aButton) { return; }
   let clickedButton = aButton.getAttribute('id');
-
   let myArray = clickedButton.split("@");
   timeZone = myArray[2];
   cityName = myArray[1];
@@ -28,6 +27,7 @@ async function rotuer(aV) {
 
   route === '/partials/cityPage.html' && loadCity();
   route === '/partials/start.html' && loadJsonAndDisplay();
+
 }
 
 window.addEventListener('popstate', rotuer);
