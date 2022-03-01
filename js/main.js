@@ -4,10 +4,15 @@ document.querySelector('body').addEventListener('click', function (event) {
 
   if (!aButton) { return; }
   let clickedButton = aButton.getAttribute('id');
-  let myArray = clickedButton.split("@");
-  timeZone = myArray[2];
-  cityName = myArray[1];
-  newPage = '/cityPage';
+  if (clickedButton == 'backButton1') {
+    turnOff();
+    newPage = '/start'
+  } else {
+    let myArray = clickedButton.split("@");
+    timeZone = myArray[2];
+    cityName = myArray[1];
+    newPage = '/cityPage';
+  }
 
   event.preventDefault();
   rotuer(newPage);
