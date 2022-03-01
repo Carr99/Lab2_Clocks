@@ -7,6 +7,12 @@ document.querySelector('body').addEventListener('click', function (event) {
   if (clickedButton == 'backButton1') {
     turnOff();
     newPage = '/start'
+  } else if (clickedButton == 'addButton') {
+    newPage = '/addCity'
+  } else if (clickedButton == 'backButton2') {
+    newPage = '/start'
+  } else if (clickedButton == 'saveInfo') {
+    return;
   } else {
     let myArray = clickedButton.split("@");
     timeZone = myArray[2];

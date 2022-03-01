@@ -24,6 +24,10 @@ p {
   font-family: 'Bitter';
 }
 
+button {
+  font-family: 'Bitter';
+}
+
 .citySquare {
   background-color: rgb(247, 247, 247);
   border-radius: 10px;
@@ -63,4 +67,8 @@ p {
 
 .backButton:hover {
   background-color: rgb(165, 14, 44);
+}
+
+input {
+  margin-bottom: 10px;
 }
