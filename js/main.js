@@ -29,12 +29,11 @@ async function rotuer(aV) {
   if (aV != null) {
     route = aV;
   }
-  route = route === '/index.html' ? '/start' : route;
   route = route === '/' ? '/start' : route;
   route = '/partials' + route + '.html';
   // load partial
   let content = await (await fetch(route)).text();
-  content.includes('<title>Error</title > ') && location.replace(' / ');
+  content.includes('<title>Error</title > ') && location.replace('/');
   document.querySelector('main').innerHTML = content;
 
   route === '/partials/cityPage.html' && loadCity();
