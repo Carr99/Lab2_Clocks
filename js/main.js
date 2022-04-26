@@ -29,6 +29,7 @@ async function rotuer(aV) {
   if (aV != null) {
     route = aV;
   }
+  route = route === '/index.html' ? '/start' : route;
   route = route === '/' ? '/start' : route;
   route = '/partials' + route + '.html';
   // load partial
